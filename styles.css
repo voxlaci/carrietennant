@@ -100,10 +100,10 @@ textarea {
   background: rgba(209, 31, 47, 0.08);
 }
 
-.brand-mark svg {
-  width: 23px;
-  height: 23px;
-  fill: currentColor;
+.brand-mark img {
+  width: 27px;
+  height: auto;
+  filter: saturate(1.08) contrast(1.04);
 }
 
 .brand-name {
@@ -286,10 +286,10 @@ h3 {
   color: var(--maple);
 }
 
-.canada-signature svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
+.canada-signature img {
+  width: 24px;
+  height: auto;
+  filter: saturate(1.08) contrast(1.04);
 }
 
 .hero-actions {
