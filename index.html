@@ -29,8 +29,14 @@
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="Carrie Tennant home">
-        <span class="brand-mark">CT</span>
-        <span>Carrie Tennant</span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path
+              d="M32 6 37 21 50 15 44 28 58 31 43 38 48 51 35 45 32 60 29 45 16 51 21 38 6 31 20 28 14 15 27 21 32 6Z"
+            />
+          </svg>
+        </span>
+        <span class="brand-name">Carrie Tennant</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
         <span></span>
@@ -61,12 +67,22 @@
           </div>
         </div>
         <div class="hero-content">
-          <p class="eyebrow">Conductor · Educator · Artistic Leader</p>
+          <p class="eyebrow">Canadian Conductor · Educator · Artistic Leader</p>
           <h1>Every voice matters.</h1>
           <p class="hero-copy">
             Carrie Tennant builds transformative choral communities where belonging,
             excellence, curiosity, and leadership grow together.
           </p>
+          <div class="canada-signature" aria-label="Canadian arts identity">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path
+                  d="M32 6 37 21 50 15 44 28 58 31 43 38 48 51 35 45 32 60 29 45 16 51 21 38 6 31 20 28 14 15 27 21 32 6Z"
+                />
+              </svg>
+            </span>
+            Canadian choral leadership from Vancouver
+          </div>
           <div class="hero-actions">
             <a class="button primary" href="#contact">Book an engagement</a>
             <a class="button secondary" href="#philosophy">Explore philosophy</a>
@@ -76,7 +92,7 @@
 
       <section class="intro-band" aria-label="Positioning summary">
         <div class="intro-statement">
-          <span>Vancouver, Canada</span>
+          <span>Vancouver, British Columbia, Canada</span>
           <strong>Conductor. Mentor. Youth choir specialist. Speaker.</strong>
         </div>
         <p>
