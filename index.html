@@ -320,6 +320,51 @@
       <p>When people sing together, communities grow stronger.</p>
     </footer>
 
+    <aside class="ai-share-widget" aria-label="Ask AI and share tools">
+      <div class="ai-panel" data-ai-panel hidden>
+        <div class="ai-panel-header">
+          <div>
+            <p class="eyebrow">Ask AI</p>
+            <h2>Explore Carrie’s work</h2>
+          </div>
+          <button class="icon-button" type="button" aria-label="Close Ask AI" data-ai-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6 18 18M18 6 6 18" />
+            </svg>
+          </button>
+        </div>
+        <div class="ai-answer" data-ai-answer>
+          Choose a question to get a quick guide through this site.
+        </div>
+        <div class="ai-prompts" aria-label="Suggested questions">
+          <button type="button" data-ai-prompt="What makes Carrie Tennant’s work distinctive?">
+            What makes Carrie distinctive?
+          </button>
+          <button type="button" data-ai-prompt="Which engagements can I book Carrie Tennant for?">
+            What can I book her for?
+          </button>
+          <button type="button" data-ai-prompt="How does Carrie approach youth choir development?">
+            Youth choir approach
+          </button>
+        </div>
+      </div>
+
+      <div class="floating-actions">
+        <button class="ask-ai-button" type="button" aria-expanded="false" data-ai-toggle>
+          <span>Ask AI</span>
+        </button>
+        <button class="share-button" type="button" aria-label="Share this website" data-share>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="18" cy="5" r="3" />
+            <circle cx="6" cy="12" r="3" />
+            <circle cx="18" cy="19" r="3" />
+            <path d="m8.7 10.6 6.6-3.2M8.7 13.4l6.6 3.2" />
+          </svg>
+        </button>
+      </div>
+      <p class="share-status" role="status" aria-live="polite" data-share-status></p>
+    </aside>
+
     <script src="script.js"></script>
   </body>
 </html>
