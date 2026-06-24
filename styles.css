@@ -730,6 +730,77 @@ h3 {
   font-size: 0.95rem;
 }
 
+.ai-answer a {
+  color: var(--maple);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ai-chat-form {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.ai-chat-form label {
+  color: var(--forest-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.ai-input-row {
+  display: grid;
+  grid-template-columns: 1fr 42px auto;
+  gap: 8px;
+}
+
+.ai-input-row input {
+  min-width: 0;
+  border: 1px solid rgba(29, 36, 38, 0.18);
+  background: #fff;
+  color: var(--charcoal);
+  padding: 11px 12px;
+  outline-color: var(--maple);
+}
+
+.ai-input-row button {
+  border: 0;
+  background: var(--maple);
+  color: #fff;
+  padding: 0 14px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ai-input-row .ai-voice-button {
+  display: grid;
+  min-height: 42px;
+  place-items: center;
+  border: 1px solid rgba(29, 36, 38, 0.16);
+  background: #fff;
+  color: var(--charcoal);
+  padding: 0;
+}
+
+.ai-voice-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.ai-voice-button.is-listening {
+  background: var(--maple);
+  color: #fff;
+}
+
 .ai-prompts {
   display: grid;
   gap: 8px;
@@ -952,9 +1023,20 @@ h3 {
 
   .ai-panel {
     width: calc(100vw - 28px);
+    max-height: calc(100vh - 112px);
+    overflow-y: auto;
   }
 
   .ask-ai-button {
     min-height: 46px;
+  }
+
+  .ai-input-row {
+    grid-template-columns: 1fr 42px;
+  }
+
+  .ai-input-row button[type="submit"] {
+    grid-column: 1 / -1;
+    min-height: 42px;
   }
 }

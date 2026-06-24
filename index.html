@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -268,8 +268,8 @@
           alt="Portrait of Carrie Tennant"
         />
         <img
-          src="https://vancouverchamberchoir.com/wp-content/uploads/VanChamberChoir-1200x798.jpg"
-          alt="Vancouver Chamber Choir ensemble"
+          src="https://vancouverchamberchoir.com/wp-content/uploads/VancouverYouthChoir-1200x801.jpg"
+          alt="Vancouver Youth Choir ensemble"
         />
         <img
           src="https://vancouverchamberchoir.com/wp-content/uploads/VancouverYouthChoir-768x512.jpg"
@@ -334,8 +334,28 @@
           </button>
         </div>
         <div class="ai-answer" data-ai-answer>
-          Choose a question to get a quick guide through this site.
+          Ask about Carrie’s conducting, youth choir work, speaking, masterclasses, or bookings.
         </div>
+        <form class="ai-chat-form" data-ai-form>
+          <label for="ai-question">Ask a question</label>
+          <div class="ai-input-row">
+            <input
+              id="ai-question"
+              type="text"
+              name="question"
+              autocomplete="off"
+              placeholder="Ask about Carrie..."
+              data-ai-input
+            />
+            <button class="ai-voice-button" type="button" aria-label="Speak your question" data-ai-voice>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z" />
+                <path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6" />
+              </svg>
+            </button>
+            <button type="submit">Ask</button>
+          </div>
+        </form>
         <div class="ai-prompts" aria-label="Suggested questions">
           <button type="button" data-ai-prompt="What makes Carrie Tennant’s work distinctive?">
             What makes Carrie distinctive?
@@ -365,6 +385,6 @@
       <p class="share-status" role="status" aria-live="polite" data-share-status></p>
     </aside>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>
